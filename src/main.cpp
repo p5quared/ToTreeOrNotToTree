@@ -1,27 +1,67 @@
+#include "FileHandle.cpp"
 #include "WordNet.h"
+
+#include <fstream>
 #include <iostream>
+#include <sstream>
+#include <regex>
 
-int main() {
-    psv::WordNet tree;
-    tree.insert("hello");
-    tree.insert("wod");
-    tree.insert("hello");
-    tree.insert("world");
-    tree.insert("per");
-    tree.insert("pfter");
-    tree.insert("supercalifragilisticexpialidocious");
+void clearPunctuation(std::string& sentence){
+    if(sentence.empty()){
+        return;
+    }
+    sentence = std::regex_replace(sentence, std::regex("[^a-zA-Z \n]"), "");
 
-    std::map<std::string, int> wordCounts = tree.getCounts();
+//    sentence.erase(std::remove_if (sentence.begin (), sentence.end (), ispunct), sentence.end ());
+}
 
-    for (auto& word : wordCounts) {
-        std::cout << word.first << " " << word.second << std::endl;
+
+int main(int argc, char **argv){
+    if(argc < 2 || argc > 3){
+        std::cout << "Usage: ./cleanup <input>" << std::endl;
+        std::cout << "Or: ./cleanup <input> <output>" << std::endl;
+        return 1;
     }
 
-    std::cout << "Total words: " << tree.getTotalWords() << std::endl;
-    std::cout << "Unique words: " << tree.getUniqueWords() << std::endl;
-    std::cout << "Long unique words: " << tree.getLongUnique() << std::endl;
-    std::cout << "Average word length: " << tree.getAverageWordLength() << std::endl;
+    std::ifstream ifile(argv[1]);
+    if(!ifile){
+        std::cout << "Could not open file: " << argv[1] << std::endl;
+        return 1;
+    }
 
+
+    std::ofstream ofile;
+    if (argc == 3){
+        ofile.open(argv[2]);
+    }else{
+        ofile.open("output.txt");
+    }
+
+    std::string sentence;
+    psv::WordNet wordNet;
+    while(std::getline(ifile, sentence, '.')){
+        clearPunctuation(sentence);
+
+        std::string word;
+        std::stringstream ss(sentence);
+        while(ss >> word){
+            wordNet.insert(word);
+        }
+
+        wordNet._sentences++;
+    }
+//    Console Printing
+//    wordNet.print();
+//    std::cout << "Total words: " << wordNet.getTotalWords() << std::endl;
+//    std::cout << "Unique words: " << wordNet.getUniqueWordCount() << std::endl;
+//    std::cout << "Long unique words: " << wordNet.getLongUniqueCount() << std::endl;
+//    std::cout << "Average word length: " << wordNet.getAverageWordLength() << std::endl;
+//    std::cout << "Average sentence length: " << wordNet.getTotalWords() / wordNet._sentences << std::endl;
+//    for(auto& word: wordNet.warnOverUsed()){
+//        std::cout << word << std::endl;
+//    }
+
+    psv::saveReport("report.txt", wordNet);
 
     return 0;
 }

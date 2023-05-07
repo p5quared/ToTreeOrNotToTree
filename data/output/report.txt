@@ -4,8 +4,10 @@ Unique Words: 10973
 Long Unique Words: 10545
 Average Word Length: 4
 Average Sentence Length: 12
+
 WARNING: Average Sentence Length is greater than 10 words
-Average Word Length is less than 5 characters
+OKAY: Average Word Length is less than 5 characters
+
 Overused Words: 
 Raskolnikov
 been
@@ -23,7 +25,7 @@ would
 your
 Index of Words: 
 
-A-AA-AA-AA-AA-AA-AA-AA-AA-AA-A
+--Aa--
 A
 Aach
 Aah
@@ -111,7 +113,7 @@ Avdotya
 Ave
 Away
 
-B-BB-BB-BB-BB-BB-BB-BB-BB-BB-B
+--Bb--
 Babushkins
 Bacchus
 Back
@@ -166,7 +168,7 @@ But
 Butwho
 By
 
-C-CC-CC-CC-CC-CC-CC-CC-CC-CC-C
+--Cc--
 CHAPTER
 Call
 Calm
@@ -226,7 +228,7 @@ Cut
 Cyprus
 Cyrus
 
-D-DD-DD-DD-DD-DD-DD-DD-DD-DD-D
+--Dd--
 D
 Dagestan
 Damn
@@ -281,7 +283,7 @@ Dussauts
 Duties
 Dyou
 
-E-EE-EE-EE-EE-EE-EE-EE-EE-EE-E
+--Ee--
 EPILOGUE
 Each
 Early
@@ -324,7 +326,7 @@ Explosive
 Expound
 Extraordinary
 
-F-FF-FF-FF-FF-FF-FF-FF-FF-FF-F
+--Ff--
 Fair
 Fancy
 Far
@@ -382,7 +384,7 @@ Funny
 Further
 Fyodorovna
 
-G-GG-GG-GG-GG-GG-GG-GG-GG-GG-G
+--Gg--
 Gallop
 Gambrinus
 Garden
@@ -421,7 +423,7 @@ Grigorievitch
 Guard
 Guess
 
-H-HH-HH-HH-HH-HH-HH-HH-HH-HH-H
+--Hh--
 Ha
 Had
 Hadnt
@@ -487,7 +489,7 @@ Hurrah
 Hush
 Hussar
 
-I-II-II-II-II-II-II-II-II-II-I
+--Ii--
 I
 II
 III
@@ -540,7 +542,7 @@ Ivanovnatime
 Ive
 Iwhich
 
-J-JJ-JJ-JJ-JJ-JJ-JJ-JJ-JJ-JJ-J
+--Jj--
 Jack
 Jamaica
 January
@@ -560,7 +562,7 @@ July
 Just
 Juster
 
-K-KK-KK-KK-KK-KK-KK-KK-KK-KK-K
+--Kk--
 K
 Kapernaumov
 Kapernaumovs
@@ -589,7 +591,7 @@ Kozels
 Krestovsky
 Kryukov
 
-L-LL-LL-LL-LL-LL-LL-LL-LL-LL-L
+--Ll--
 LUZHIN
 Lady
 Lala
@@ -652,7 +654,7 @@ Luzhins
 Lycurgus
 Lying
 
-M-MM-MM-MM-MM-MM-MM-MM-MM-MM-M
+--Mm--
 Mack
 Mad
 Madam
@@ -723,7 +725,7 @@ Murmurs
 Must
 My
 
-N-NN-NN-NN-NN-NN-NN-NN-NN-NN-N
+--Nn--
 N
 NOTE
 Naples
@@ -770,7 +772,7 @@ Noticing
 Now
 Number
 
-O-OO-OO-OO-OO-OO-OO-OO-OO-OO-O
+--Oo--
 O
 Och
 Of
@@ -797,7 +799,7 @@ Over
 Owing
 Own
 
-P-PP-PP-PP-PP-PP-PP-PP-PP-PP-P
+--Pp--
 P
 PART
 PULCHERIA
@@ -897,12 +899,12 @@ Put
 Putting
 Pyotr
 
-Q-QQ-QQ-QQ-QQ-QQ-QQ-QQ-QQ-QQ-Q
+--Qq--
 Queer
 Quick
 Quite
 
-R-RR-RR-RR-RR-RR-RR-RR-RR-RR-R
+--Rr--
 R
 RASKOLNIKOV
 Radishchev
@@ -963,7 +965,7 @@ Russian
 Russians
 Ryazan
 
-S-SS-SS-SS-SS-SS-SS-SS-SS-SS-S
+--Ss--
 S
 Sadovy
 Said
@@ -1074,7 +1076,7 @@ Svidrigalovs
 Svirbey
 Switzerland
 
-T-TT-TT-TT-TT-TT-TT-TT-TT-TT-T
+--Tt--
 T
 TRANSLATOR
 TRANSLATORS
@@ -1163,7 +1165,7 @@ Twice
 Two
 Tyrolese
 
-U-UU-UU-UU-UU-UU-UU-UU-UU-UU-U
+--Uu--
 U
 Ugh
 Uncertainty
@@ -1175,7 +1177,7 @@ United
 Unlocking
 Upon
 
-V-VV-VV-VV-VV-VV-VV-VV-VV-VV-V
+--Vv--
 V
 VI
 VII
@@ -1202,7 +1204,7 @@ Voskresensky
 Voznesensky
 Vrazumihin
 
-W-WW-WW-WW-WW-WW-WW-WW-WW-WW-W
+--Ww--
 Wagners
 Wait
 Walk
@@ -1253,10 +1255,10 @@ Wringing
 Write
 Wsche
 
-X-XX-XX-XX-XX-XX-XX-XX-XX-XX-X
+--Xx--
 X
 
-Y-YY-YY-YY-YY-YY-YY-YY-YY-YY-Y
+--Yy--
 Y
 Ye
 Yea
@@ -1277,7 +1279,7 @@ Yushin
 Yusupov
 Yyes
 
-Z-ZZ-ZZ-ZZ-ZZ-ZZ-ZZ-ZZ-ZZ-ZZ-Z
+--Zz--
 Zaharovitch
 Zametov
 Zametovs
@@ -1290,7 +1292,7 @@ Zossimov
 ZossimovI
 Zossimovthats
 
-a-aa-aa-aa-aa-aa-aa-aa-aa-aa-a
+--aa--
 a
 aa
 aback
@@ -1893,7 +1895,7 @@ axe
 axes
 axiom
 
-b-bb-bb-bb-bb-bb-bb-bb-bb-bb-b
+--bb--
 babble
 babbled
 babbling
@@ -2432,7 +2434,7 @@ bwoken
 by
 bytheway
 
-c-cc-cc-cc-cc-cc-cc-cc-cc-cc-c
+--cc--
 cab
 cabbage
 cabdrivers
@@ -3303,7 +3305,7 @@ cynical
 cynicism
 cypress
 
-d-dd-dd-dd-dd-dd-dd-dd-dd-dd-d
+--dd--
 daintily
 dainty
 damages
@@ -3922,7 +3924,7 @@ dwelling
 dying
 dyou
 
-e-ee-ee-ee-ee-ee-ee-ee-ee-ee-e
+--ee--
 e
 each
 eager
@@ -4312,7 +4314,7 @@ eyelashes
 eyelids
 eyes
 
-f-ff-ff-ff-ff-ff-ff-ff-ff-ff-f
+--ff--
 face
 faces
 facilitate
@@ -4826,7 +4828,7 @@ fussily
 future
 futurethough
 
-g-gg-gg-gg-gg-gg-gg-gg-gg-gg-g
+--gg--
 gabbled
 gaily
 gailydressed
@@ -5116,7 +5118,7 @@ guttural
 guzzling
 gymnasium
 
-h-hh-hh-hh-hh-hh-hh-hh-hh-hh-h
+--hh--
 ha
 habit
 habits
@@ -5532,7 +5534,7 @@ hysterically
 hysterics
 hystericsbut
 
-i-ii-ii-ii-ii-ii-ii-ii-ii-ii-i
+--ii--
 i
 ice
 icy
@@ -5983,7 +5985,7 @@ itwhich
 itwhy
 ivory
 
-j-jj-jj-jj-jj-jj-jj-jj-jj-jj-j
+--jj--
 jacket
 jai
 jam
@@ -6051,7 +6053,7 @@ justify
 justly
 juxtaposition
 
-k-kk-kk-kk-kk-kk-kk-kk-kk-kk-k
+--kk--
 kammerjunker
 keen
 keenly
@@ -6118,7 +6120,7 @@ known
 knows
 knowsperhaps
 
-l-ll-ll-ll-ll-ll-ll-ll-ll-ll-l
+--ll--
 la
 labour
 lace
@@ -6438,7 +6440,7 @@ lyinglying
 lyingone
 lymph
 
-m-mm-mm-mm-mm-mm-mm-mm-mm-mm-m
+--mm--
 mad
 madam
 maddened
@@ -6869,7 +6871,7 @@ mystification
 mystified
 mystify
 
-n-nn-nn-nn-nn-nn-nn-nn-nn-nn-n
+--nn--
 nag
 nags
 nail
@@ -7045,7 +7047,7 @@ nurse
 nursing
 nuts
 
-o-oo-oo-oo-oo-oo-oo-oo-oo-oo-o
+--oo--
 oasis
 oath
 oaths
@@ -7289,7 +7291,7 @@ own
 owner
 owning
 
-p-pp-pp-pp-pp-pp-pp-pp-pp-pp-p
+--pp--
 pace
 paced
 paces
@@ -8041,7 +8043,7 @@ puzzled
 pyramid
 pyramids
 
-q-qq-qq-qq-qq-qq-qq-qq-qq-qq-q
+--qq--
 quadrangle
 quadrangular
 quaking
@@ -8084,7 +8086,7 @@ quivered
 quivering
 quoted
 
-r-rr-rr-rr-rr-rr-rr-rr-rr-rr-r
+--rr--
 rabbits
 race
 races
@@ -8612,7 +8614,7 @@ rusty
 rut
 ruthlessly
 
-s-ss-ss-ss-ss-ss-ss-ss-ss-ss-s
+--ss--
 sabre
 sack
 sacking
@@ -9829,7 +9831,7 @@ system
 systematic
 systems
 
-t-tt-tt-tt-tt-tt-tt-tt-tt-tt-t
+--tt--
 table
 tablecloth
 tables
@@ -10338,7 +10340,7 @@ typhus
 tyranny
 tyrant
 
-u-uu-uu-uu-uu-uu-uu-uu-uu-uu-u
+--uu--
 ugliness
 ugly
 ulterior
@@ -10578,7 +10580,7 @@ uttered
 uttering
 utterly
 
-v-vv-vv-vv-vv-vv-vv-vv-vv-vv-v
+--vv--
 vacantly
 vagabond
 vague
@@ -10692,7 +10694,7 @@ vulgar
 vulgarise
 vulgarity
 
-w-ww-ww-ww-ww-ww-ww-ww-ww-ww-w
+--ww--
 wadded
 wade
 wading
@@ -11042,7 +11044,7 @@ wrongwas
 wrote
 wrung
 
-y-yy-yy-yy-yy-yy-yy-yy-yy-yy-y
+--yy--
 yard
 yards
 yawn
@@ -11093,7 +11095,7 @@ youth
 youthful
 youve
 
-z-zz-zz-zz-zz-zz-zz-zz-zz-zz-z
+--zz--
 zeal
 zest
 zigzags
