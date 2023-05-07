@@ -11,15 +11,12 @@ void clearPunctuation(std::string& sentence){
         return;
     }
     sentence = std::regex_replace(sentence, std::regex("[^a-zA-Z \n]"), "");
-
-//    sentence.erase(std::remove_if (sentence.begin (), sentence.end (), ispunct), sentence.end ());
 }
 
 
 int main(int argc, char **argv){
-    if(argc < 2 || argc > 3){
+    if(argc != 2){
         std::cout << "Usage: ./cleanup <input>" << std::endl;
-        std::cout << "Or: ./cleanup <input> <output>" << std::endl;
         return 1;
     }
 
@@ -27,14 +24,6 @@ int main(int argc, char **argv){
     if(!ifile){
         std::cout << "Could not open file: " << argv[1] << std::endl;
         return 1;
-    }
-
-
-    std::ofstream ofile;
-    if (argc == 3){
-        ofile.open(argv[2]);
-    }else{
-        ofile.open("output.txt");
     }
 
     std::string sentence;
@@ -50,16 +39,6 @@ int main(int argc, char **argv){
 
         wordNet._sentences++;
     }
-//    Console Printing
-//    wordNet.print();
-//    std::cout << "Total words: " << wordNet.getTotalWords() << std::endl;
-//    std::cout << "Unique words: " << wordNet.getUniqueWordCount() << std::endl;
-//    std::cout << "Long unique words: " << wordNet.getLongUniqueCount() << std::endl;
-//    std::cout << "Average word length: " << wordNet.getAverageWordLength() << std::endl;
-//    std::cout << "Average sentence length: " << wordNet.getTotalWords() / wordNet._sentences << std::endl;
-//    for(auto& word: wordNet.overusedWords()){
-//        std::cout << word << std::endl;
-//    }
 
     // get just the name of the file, no extension
     std::string filename = argv[1];
