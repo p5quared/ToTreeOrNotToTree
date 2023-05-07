@@ -9,5 +9,6 @@
 namespace psv
 {
     void saveReport(const std::string& filename, const WordNet& wordnet);
-    void saveReportPDF(const std::string& filename, const WordNet& wordnet);
+    void saveReportHTML(const std::string& filename, const WordNet& wordnet);
+    void saveReportPDF(const std::string& filename);
 }

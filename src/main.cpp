@@ -1,4 +1,4 @@
-#include "FileHandle.cpp"
+#include "FileHandle.h"
 #include "WordNet.h"
 
 #include <fstream>
@@ -57,11 +57,19 @@ int main(int argc, char **argv){
 //    std::cout << "Long unique words: " << wordNet.getLongUniqueCount() << std::endl;
 //    std::cout << "Average word length: " << wordNet.getAverageWordLength() << std::endl;
 //    std::cout << "Average sentence length: " << wordNet.getTotalWords() / wordNet._sentences << std::endl;
-//    for(auto& word: wordNet.warnOverUsed()){
+//    for(auto& word: wordNet.overusedWords()){
 //        std::cout << word << std::endl;
 //    }
 
-    psv::saveReport("report.txt", wordNet);
+    // get just the name of the file, no extension
+    std::string filename = argv[1];
+    filename = filename.substr(0, filename.find_last_of('.'));
+    filename = filename.substr(filename.find_last_of('/') + 1);
+    std::cout << filename;
+
+    psv::saveReport(filename, wordNet);
+    psv::saveReportHTML(filename, wordNet);
+    psv::saveReportPDF(filename);
 
     return 0;
 }

@@ -24,9 +24,10 @@ public:
     unsigned int getAverageWordLength() const { return _total_characters / _total_words; }
     unsigned int getTotalWords() const { return _total_words; };
     unsigned int averageSentenceLength() const { return _total_words / _sentences; }
-    std::vector<std::string> warnOverUsed() const;
     bool warnSentenceLength() const {return this->averageSentenceLength() > 10;} // warning for average sentence length > 10 words
     bool warnWordLength() const {return this->getAverageWordLength() > 5;}
+    bool warnOverused() const {return this->overusedWords().size();}
+    std::vector<std::string> overusedWords() const;
     // TODO: Move construction from file into class so we can make this private
     int _sentences;
 

@@ -8,11 +8,14 @@ include_directories(include)
 add_executable(Cleanup src/main.cpp)
 
 add_library(TextTree include/WordNet.h src/WordNet.cpp)
+
 add_library(FileHandler include/FileHandle.cpp)
+file(MAKE_DIRECTORY "${PROJECT_SOURCE_DIR}/data/output/")
+target_compile_definitions(FileHandler PRIVATE O_DIR="${CMAKE_SOURCE_DIR}/data/output/")
 
 target_link_libraries(Cleanup PRIVATE TextTree)
 target_link_libraries(Cleanup PRIVATE FileHandler)
+find_package(CURL REQUIRED)
+target_link_libraries(Cleanup PRIVATE CURL::libcurl)
 
 
-file(MAKE_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/data/output/")
-target_compile_definitions(Cleanup PRIVATE O_DIR="${CMAKE_CURRENT_SOURCE_DIR}/data/output/")

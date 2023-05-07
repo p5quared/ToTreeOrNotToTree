@@ -65,7 +65,7 @@ std::map<std::string, int> WordNet::_getCounts(Node<std::string> *node) const {
  *
  * @return std::vector<std::string> Vector of overused words
  */
-std::vector<std::string> WordNet::warnOverUsed() const {
+std::vector<std::string> WordNet::overusedWords() const {
     const auto wordCounts = this->getCounts();
     std::vector<std::string> overused;
 
