@@ -9,6 +9,15 @@ cd build
 cmake ..
 make
 ```
+### Note
+Read the dependencies, but if the project will not build it is likely because you are on a computer that doesn't have
+CURL installed by default, or CMAKE cannot find it.
+If this is the case, you can install it with the following command (or similar, check your OS):
+```bash
+sudo apt-get install libcurl4-openssl-dev
+```
+If this still doesn't work, you can try to manually specify the path to CURL in the CMakeLists.txt file.
+
 ## Run
 One target is produced:
 * `analyze`
