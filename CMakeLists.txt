@@ -19,9 +19,10 @@ target_link_libraries(analyze PRIVATE FileHandler)
 if(WIN32)
     add_definitions("-DCURL_STATICLIB")
 endif()
+set(CURL_LIBRARY "-lcurl")
+include_directories(${CURL_INCLUDE_DIR})
 find_package(CURL REQUIRED)
 target_link_libraries(analyze PRIVATE CURL::libcurl)
-include_directories(${CURL_INCLUDE_DIR})
 
 
 
