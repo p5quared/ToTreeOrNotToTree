@@ -15,7 +15,13 @@ target_compile_definitions(FileHandler PRIVATE O_DIR="${CMAKE_SOURCE_DIR}/data/o
 
 target_link_libraries(analyze PRIVATE TextTree)
 target_link_libraries(analyze PRIVATE FileHandler)
+
+if(WIN32)
+    add_definitions("-DCURL_STATICLIB")
+endif()
 find_package(CURL REQUIRED)
 target_link_libraries(analyze PRIVATE CURL::libcurl)
+include_directories(${CURL_INCLUDE_DIR})
+
 
 
